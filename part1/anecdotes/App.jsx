@@ -5,7 +5,7 @@ const Button = ({ onClick, name }) => {
 }
 
 const Randomize = (setSelected) => {
-    let randomNumber = Math.floor(Math.random() * 7)
+    let randomNumber = Math.floor(Math.random() * 8)
     console.log(randomNumber)
     setSelected(randomNumber)
 }
