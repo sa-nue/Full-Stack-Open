@@ -20,7 +20,7 @@ app.use((req, res, next) => {
   }
 })
 
-// Transforms requests to make id usable
+// Transforms responses to make id usable
 const transformPerson = (person) => {
   return {
     id: person._id.toString(),
