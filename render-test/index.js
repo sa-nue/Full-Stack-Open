@@ -9,10 +9,6 @@ app.get('/', (request, response) => {
     response.send('<h1>Hello World!</h1>')
 })
 
-app.get('/get-ip', (req, res) => {
-    res.send({ ip: req.ip })
-})
-
 app.get('/api/notes', (request, response) => {
     Note.find({}).then(notes => {
         response.json(notes)
